@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Dương Minh Quang, a Java Full-Stack Developer specializing in Spring Boot, distributed systems, eKYC, and AI integrations." />
+    <meta name="theme-color" content="#07111f" />
+    <meta property="og:title" content="Dương Minh Quang — Java Full-Stack Developer" />
+    <meta property="og:description" content="Enterprise eKYC, distributed systems, and AI-powered platforms built with Java, Spring Boot, and Next.js." />
+    <meta property="og:type" content="website" />
+    <title>Dương Minh Quang — Java Full-Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="page-glow page-glow--one" aria-hidden="true"></div>
+    <div class="page-glow page-glow--two" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand__mark">DQ</span>
+        <span class="brand__name">Dương Minh Quang</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a class="nav__cta" href="#contact">Let’s talk</a>
+      </nav>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation">
+        <span></span><span></span>
+      </button>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Let’s talk</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero__copy reveal">
+          <p class="eyebrow"><span class="status-dot"></span> Based in Hanoi, Vietnam</p>
+          <h1>I build secure systems where <em>finance</em>, identity, and AI meet.</h1>
+          <p class="hero__lead">Java Full-Stack Developer with 5+ years of experience delivering enterprise applications, eKYC platforms, and AI-powered products.</p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#work">Explore my work <span aria-hidden="true">↘</span></a>
+            <a class="button button--ghost" href="https://www.linkedin.com/in/d%C6%B0%C6%A1ng-minh-quang-58376118b/" target="_blank" rel="noreferrer">View LinkedIn</a>
+          </div>
+          <div class="hero__proof" aria-label="Professional highlights">
+            <div><strong>5+</strong><span>Years building</span></div>
+            <div><strong>10+</strong><span>Products shipped</span></div>
+            <div><strong>E2E</strong><span>Delivery mindset</span></div>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal" aria-label="Technology system illustration">
+          <div class="system-card system-card--main">
+            <div class="system-card__top"><span>production.system</span><span class="live-pill">LIVE</span></div>
+            <div class="system-card__body">
+              <div class="code-line"><span>01</span><code>identity.verify()</code></div>
+              <div class="code-line"><span>02</span><code>transaction.secure()</code></div>
+              <div class="code-line"><span>03</span><code>events.publish(kafka)</code></div>
+              <div class="code-line"><span>04</span><code>ai.respond(context)</code></div>
+            </div>
+            <div class="system-card__footer"><span>99.9% reliable</span><span>Spring Boot</span></div>
+          </div>
+          <div class="orbit orbit--java">JAVA</div>
+          <div class="orbit orbit--kafka">KAFKA</div>
+          <div class="orbit orbit--ai">AI / LLM</div>
+          <svg class="connection-lines" viewBox="0 0 600 600" aria-hidden="true">
+            <path d="M95 152 C190 155 168 250 255 260" />
+            <path d="M500 95 C430 180 455 240 382 270" />
+            <path d="M510 490 C430 420 442 370 382 340" />
+          </svg>
+        </div>
+      </section>
+
+      <section class="marquee" aria-label="Core technologies">
+        <div class="marquee__track">
+          <span>Java</span><i>✦</i><span>Spring Boot</span><i>✦</i><span>Next.js</span><i>✦</i><span>Kafka</span><i>✦</i><span>Redis</span><i>✦</i><span>PostgreSQL</span><i>✦</i><span>RAG & LLM</span><i>✦</i>
+          <span>Java</span><i>✦</i><span>Spring Boot</span><i>✦</i><span>Next.js</span><i>✦</i><span>Kafka</span><i>✦</i><span>Redis</span><i>✦</i><span>PostgreSQL</span><i>✦</i><span>RAG & LLM</span><i>✦</i>
+        </div>
+      </section>
+
+      <section class="section work" id="work">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow">Selected impact</p><h2>Systems built for real-world complexity.</h2></div>
+          <p>From biometric verification to AI conversations, I turn high-stakes requirements into dependable products.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project project--featured reveal">
+            <div class="project__meta"><span>01 / FINTECH</span><span>2024 — PRESENT</span></div>
+            <div class="project__content">
+              <p class="project__kicker">VNPAY eKYC Ecosystem</p>
+              <h3>Secure identity verification at banking scale.</h3>
+              <p>Backend services and operational portals for biometric authentication, citizen identity verification, transaction reconciliation, and secure access control.</p>
+              <ul class="tag-list"><li>Java</li><li>Spring Boot</li><li>Next.js</li><li>Kafka</li><li>Redis</li><li>Oracle</li></ul>
+            </div>
+            <div class="project__graphic project__graphic--identity" aria-hidden="true">
+              <div class="scan-frame"><div class="scan-line"></div><div class="face"><span></span><i></i></div></div>
+              <div class="verified-badge">✓ VERIFIED</div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__meta"><span>02 / AI PLATFORM</span><span>2025 — PRESENT</span></div>
+            <div class="project__content">
+              <p class="project__kicker">AI Agent Operations Portal</p>
+              <h3>One control plane for intelligent conversations.</h3>
+              <p>A multi-tenant portal integrating RAG and LLM services with robust authentication, authorization, and Row-Level Security.</p>
+              <ul class="tag-list"><li>Spring Boot</li><li>Next.js</li><li>PostgreSQL</li><li>RAG</li><li>LLM</li></ul>
+            </div>
+            <div class="mini-diagram" aria-hidden="true"><span>Portal</span><b>→</b><span>RAG</span><b>→</b><span>LLM</span></div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__meta"><span>03 / MESSAGING</span><span>2024 — PRESENT</span></div>
+            <div class="project__content">
+              <p class="project__kicker">ICI Chatbot Gateway</p>
+              <h3>Event-driven messaging across every channel.</h3>
+              <p>A gateway connecting Facebook and Zalo to an AI core, with asynchronous event processing and conversation persistence.</p>
+              <ul class="tag-list"><li>Java</li><li>Kafka</li><li>MongoDB</li><li>Oracle</li><li>REST APIs</li></ul>
+            </div>
+            <div class="message-stack" aria-hidden="true"><span>Facebook</span><span>AI Core</span><span>Zalo</span></div>
+          </article>
+
+          <article class="project project--wide reveal">
+            <div class="project__meta"><span>04 / GENERATIVE AI</span><span>2023 — 2024</span></div>
+            <div class="project__content">
+              <p class="project__kicker">Enterprise AI Chatbot Suite</p>
+              <h3>Making private knowledge conversational.</h3>
+              <p>Document management and chatbot products for healthcare, travel, and the arts using semantic retrieval, vector search, and real-time streaming.</p>
+              <ul class="tag-list"><li>React</li><li>Vue.js</li><li>Python</li><li>Django</li><li>Azure OpenAI</li><li>Vector Search</li></ul>
+            </div>
+            <div class="project__metric"><strong>5+</strong><span>AI products delivered</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section experience" id="experience">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow">Career timeline</p><h2>Experience shaped by shipping.</h2></div>
+        </div>
+        <div class="timeline">
+          <article class="timeline__item reveal">
+            <div class="timeline__date">2024 — NOW</div>
+            <div class="timeline__dot"></div>
+            <div class="timeline__content"><div><h3>Java Full-Stack Developer</h3><p>VNPAY</p></div><p>Building enterprise eKYC and AI platforms for banks and financial institutions. Designing scalable services, distributed workflows, and secure operational portals.</p></div>
+          </article>
+          <article class="timeline__item reveal">
+            <div class="timeline__date">2022 — 2024</div>
+            <div class="timeline__dot"></div>
+            <div class="timeline__content"><div><h3>Full-Stack Developer</h3><p>VietIS Corporation</p></div><p>Delivered Java migrations, enterprise portals, and Azure OpenAI chatbot solutions for Japanese clients across multiple industries.</p></div>
+          </article>
+          <article class="timeline__item reveal">
+            <div class="timeline__date">2021 — 2022</div>
+            <div class="timeline__dot"></div>
+            <div class="timeline__content"><div><h3>Full-Stack Developer</h3><p>FPT Software</p></div><p>Developed a recruitment platform for Rikunabi with Java, Spring Boot, React, Next.js, and TypeScript.</p></div>
+          </article>
+          <article class="timeline__item reveal">
+            <div class="timeline__date">2020 — 2021</div>
+            <div class="timeline__dot"></div>
+            <div class="timeline__content"><div><h3>Full-Stack Engineer</h3><p>Solid Tech</p></div><p>Contributed to VOV digital media products using Java, Spring Boot, Drupal, PHP, and modern frontend technologies.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section skills" id="skills">
+        <div class="skills__intro reveal">
+          <p class="eyebrow">Technical toolkit</p>
+          <h2>Backend depth.<br />Full-stack range.</h2>
+          <p>I choose technologies around the problem—reliability, security, throughput, and a clean experience for the people operating the system.</p>
+        </div>
+        <div class="skills__grid reveal">
+          <div class="skill-group"><span>01</span><div><h3>Backend</h3><p>Java · Spring Boot · Node.js · NestJS · Python · Django · PHP</p></div></div>
+          <div class="skill-group"><span>02</span><div><h3>Frontend</h3><p>React · Next.js · Vue.js · TypeScript · JavaScript · Thymeleaf</p></div></div>
+          <div class="skill-group"><span>03</span><div><h3>Data</h3><p>Oracle · PostgreSQL · MongoDB · MySQL · SQL Server</p></div></div>
+          <div class="skill-group"><span>04</span><div><h3>Distributed</h3><p>Kafka · Redis · REST APIs · Event-driven architecture · RLS</p></div></div>
+          <div class="skill-group"><span>05</span><div><h3>AI Integration</h3><p>RAG · LLM · Azure OpenAI · Azure AI Search · Vector Search</p></div></div>
+          <div class="skill-group"><span>06</span><div><h3>Engineering</h3><p>API design · System integration · JUnit · Docker · Agile</p></div></div>
+        </div>
+      </section>
+
+      <section class="section education">
+        <div class="education__card reveal"><p class="eyebrow">Currently learning</p><h3>Master of Software Engineering</h3><p>FSB — FPT School of Business & Technology</p><span>December 2024 — Present</span></div>
+        <div class="education__card reveal"><p class="eyebrow">Foundation</p><h3>Bachelor of Software Engineering</h3><p>FPT University</p><span>August 2018 — May 2022</span></div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact__inner reveal">
+          <p class="eyebrow">Let’s build something dependable</p>
+          <h2>Have a complex system<br />that needs a clear path?</h2>
+          <div class="contact__actions">
+            <a class="button button--light" href="mailto:minhquang.17820@gmail.com">minhquang.17820@gmail.com <span aria-hidden="true">↗</span></a>
+            <a class="button button--outline-light" href="https://www.linkedin.com/in/d%C6%B0%C6%A1ng-minh-quang-58376118b/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"><p>© <span id="year"></span> Dương Minh Quang</p><p>Designed for clarity. Built for speed.</p><a href="#top">Back to top ↑</a></footer>
+  </body>
+</html>
