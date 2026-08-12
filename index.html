@@ -122,12 +122,18 @@
                 <p>A multi-tenant operating layer connecting secure enterprise data to intelligent conversations.</p>
                 <ul><li>RAG</li><li>LLM</li><li>PostgreSQL</li><li>RLS</li></ul>
               </div>
-              <div class="agent-flow" aria-hidden="true">
-                <div class="agent-flow__head"><span>RUN / 0482</span><b>PROCESSING</b></div>
-                <div class="flow-row"><i>01</i><span>Knowledge query received</span><b>12ms</b></div>
-                <div class="flow-row"><i>02</i><span>Context retrieved</span><b>84ms</b></div>
-                <div class="flow-row active"><i>03</i><span>Response generated</span><b>486ms</b></div>
-                <div class="flow-output"><span></span><span></span><span></span><span></span></div>
+              <div class="project-system agent-system" aria-hidden="true">
+                <div class="project-system__bar"><span>AGENT / ORCHESTRATION</span><b><i></i> RUNNING</b></div>
+                <div class="project-system__canvas">
+                  <div class="sys-node agent-node--portal"><small>ENTRY</small><strong>PORTAL</strong><span>NEXT.JS</span></div>
+                  <div class="sys-node agent-node--auth"><small>SECURE</small><strong>AUTH + RLS</strong><span>TENANT SCOPE</span></div>
+                  <div class="sys-node sys-node--accent agent-node--rag"><small>CONTEXT</small><strong>RAG CORE</strong><span>RETRIEVAL</span><i></i></div>
+                  <div class="sys-node agent-node--vector"><small>KNOWLEDGE</small><strong>VECTOR DB</strong><span>EMBEDDINGS</span></div>
+                  <div class="sys-node agent-node--llm"><small>GENERATE</small><strong>LLM</strong><span>RESPONSE</span></div>
+                  <svg viewBox="0 0 600 210" preserveAspectRatio="none"><path d="M75 105H170"/><path d="M270 105H335"/><path d="M390 82V42H483"/><path d="M390 128V172H483"/></svg>
+                  <i class="flow-pulse flow-pulse--a"></i><i class="flow-pulse flow-pulse--b"></i><i class="flow-pulse flow-pulse--c"></i>
+                </div>
+                <div class="project-system__footer"><span>RETRIEVAL <b>84ms</b></span><span>TENANT <b>ISOLATED</b></span><span>STATUS <b>HEALTHY</b></span></div>
               </div>
             </article>
 
@@ -139,10 +145,18 @@
                 <p>An event-driven bridge connecting Facebook and Zalo conversations to an AI core.</p>
                 <ul><li>Java</li><li>Kafka</li><li>MongoDB</li><li>REST</li></ul>
               </div>
-              <div class="gateway-map" aria-hidden="true">
-                <div class="channel channel--fb">f</div><div class="channel channel--zalo">Z</div>
-                <div class="gateway-core"><span>ICI</span><i></i></div><div class="channel channel--ai">AI</div>
-                <svg viewBox="0 0 500 230"><path d="M65 55C150 55 135 115 220 115"/><path d="M65 180C150 180 135 115 220 115"/><path d="M280 115H430"/></svg>
+              <div class="project-system gateway-system" aria-hidden="true">
+                <div class="project-system__bar"><span>ICI / MESSAGE ROUTER</span><b><i></i> ONLINE</b></div>
+                <div class="project-system__canvas">
+                  <div class="channel-node channel-node--fb"><strong>f</strong><span>FACEBOOK</span></div>
+                  <div class="channel-node channel-node--zalo"><strong>Z</strong><span>ZALO</span></div>
+                  <div class="gateway-hub"><span>GATEWAY</span><strong>ICI</strong><i></i><i></i></div>
+                  <div class="channel-node channel-node--ai"><strong>AI</strong><span>CORE</span></div>
+                  <div class="event-bus"><small>ASYNC BUS</small><strong>KAFKA</strong></div>
+                  <svg viewBox="0 0 600 210" preserveAspectRatio="none"><path d="M72 47C165 47 165 105 260 105"/><path d="M72 165C165 165 165 105 260 105"/><path d="M345 105H500"/><path d="M303 142V180H410"/></svg>
+                  <i class="message-packet message-packet--one"></i><i class="message-packet message-packet--two"></i><i class="message-packet message-packet--three"></i>
+                </div>
+                <div class="project-system__footer"><span>CHANNELS <b>02</b></span><span>DELIVERY <b>ASYNC</b></span><span>STORE <b>MONGODB</b></span></div>
               </div>
             </article>
           </div>
@@ -155,8 +169,18 @@
               <p>Private-knowledge assistants for healthcare, travel and the arts—powered by semantic retrieval, vector search and real-time streaming.</p>
               <ul><li>Azure OpenAI</li><li>Vector Search</li><li>React</li><li>Django</li></ul>
             </div>
-            <div class="suite-metric"><span>PRODUCTS<br />DELIVERED</span><strong>05<span>+</span></strong><i>ACROSS 3 INDUSTRIES</i></div>
-            <div class="suite-orbit" aria-hidden="true"><span>HEALTH</span><span>TRAVEL</span><span>ARTS</span><i></i></div>
+            <div class="suite-system" aria-hidden="true">
+              <div class="project-system__bar"><span>KNOWLEDGE / PIPELINE</span><b><i></i> INDEXED</b></div>
+              <div class="suite-system__canvas">
+                <div class="suite-node suite-node--docs"><small>SOURCE</small><strong>DOCS</strong><span>UPLOAD</span></div>
+                <div class="suite-node suite-node--index"><small>RETRIEVE</small><strong>VECTOR<br />INDEX</strong><span>SEMANTIC</span></div>
+                <div class="suite-node suite-node--openai"><small>GENERATE</small><strong>AZURE<br />OPENAI</strong><span>STREAM</span></div>
+                <div class="domain-node domain-node--health">HEALTH</div><div class="domain-node domain-node--travel">TRAVEL</div><div class="domain-node domain-node--arts">ARTS</div>
+                <svg viewBox="0 0 570 250" preserveAspectRatio="none"><path d="M70 125H175"/><path d="M275 125H365"/><path d="M445 105C490 105 485 48 520 48"/><path d="M445 125H520"/><path d="M445 145C490 145 485 205 520 205"/></svg>
+                <i class="pipeline-pulse pipeline-pulse--one"></i><i class="pipeline-pulse pipeline-pulse--two"></i>
+              </div>
+              <div class="project-system__footer"><span>PRODUCTS <b>05+</b></span><span>DOMAINS <b>03</b></span><span>SEARCH <b>VECTOR</b></span></div>
+            </div>
           </article>
         </div>
       </section>
